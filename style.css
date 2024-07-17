@@ -61,6 +61,10 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+.hero-left .contact-us button:hover{
+    background-color: #fc6666;
+}
+
 
 /* =========CONTACT-US========= */
 
@@ -121,6 +125,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    
 }
 
 .main-contact form .checkbox-container{
@@ -174,10 +179,11 @@ h1, h2, h3, h4, h5, h6 {
 .services-container{
     width: 80%;
     margin: auto;
-    height: 80vh;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 .services-container .services-text span{
@@ -193,6 +199,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding: 50px 0px;
     width: 90%;
+    
 }
 
 .services-container .services-content .services-title h2{
@@ -204,6 +211,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .slide-container .card{
@@ -231,6 +239,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     opacity: 0;
     transition: 0.8s ease-in-out;
+    
 }
 
 .services-slider .slide-container .card .slide-content .slide-title span{
@@ -260,6 +269,11 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
 }
 
+.services-slider .slide-container .card .slide-content .read-more-btn button a{
+    text-decoration: none;
+    color: #fe6262;
+}
+
 .services-slider .slide-container .card .slide-content .read-more-btn button i{
     margin-left: 4px;
 }
@@ -287,6 +301,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
 
 .projects-container .projects-title span{
@@ -335,3 +350,71 @@ h1, h2, h3, h4, h5, h6 {
     background: #f66d6d;
     color: white;
 }
+
+
+/* =======GROWTH SECTION======== */
+
+#growth{
+    padding: 50px 0;
+    width: 80%;
+    margin: auto;
+    background-color: #f6f4f4;
+}
+
+.growth-container .growth-title span{
+    text-transform: uppercase;
+    color: #ff0000;
+    font-size: 20px;
+}
+
+.growth-container .growth-heading h2{
+    padding: 20px 0;
+    text-transform: uppercase;
+}
+
+.growth .growth-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.growth .growth-section .growth-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    object-fit: cover;
+}
+
+.growth .growth-section .main-box{
+    height: 100%;
+    padding: 40px;
+    margin: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.growth .growth-section .main-box div{
+    margin: 4px 0;
+}
+
+.growth .growth-section .main-box:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.growth .growth-section .main-box .growth-icon i{
+    color: red;
+    font-size: 20px;
+}
+
+.growth .growth-section .main-box .growth-value span{
+    font-size: 30px;
+}
+
+.growth .growth-section .main-box .growth-text span{
+    font-size: 16px;
+    color: gray;
+}
+
+
