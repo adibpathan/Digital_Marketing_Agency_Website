@@ -59,3 +59,28 @@ contactBtn.addEventListener('click', (e)=>{
         contactSection.classList.add('hide')
     }
 })
+
+let projectContents = document.getElementsByClassName('projects-contents');
+let projectImage = document.getElementById('project-image');
+
+// Function to remove active class from all projectContents
+function removeActiveClass() {
+  Array.from(projectContents).forEach((project) => {
+    project.classList.remove('active');
+  });
+}
+
+Array.from(projectContents).forEach((project) => {
+  project.addEventListener('click', (e) => {
+    // Remove active class from all projectContents
+    removeActiveClass();
+    // Add active class to the clicked projectContents
+    project.classList.add('active');
+
+    // Update the project image
+    let imageSrc = project.getAttribute('data-image');
+    projectImage.setAttribute('src', imageSrc);
+  });
+});
+
+

@@ -271,3 +271,67 @@ h1, h2, h3, h4, h5, h6 {
 .services-slider .slide-container .card .slide-content:hover{
     opacity: 1;
 }
+
+
+
+/* =========PROJECTS========= */
+
+#projects{
+    width: 66%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects-container .projects-title span{
+    text-transform: uppercase;
+    color: #ff0000;
+    font-size: 20px;
+}
+
+.projects-container .projects-head{
+    padding: 30px 0;
+    text-transform: uppercase;
+}
+
+.projects-main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects-main .projects-box{
+    margin-left: 50px;
+    background-color: #f6f4f4;
+}
+
+.projects-main .projects-box .projects-contents{
+    padding: 24px;
+    text-align: left; 
+    cursor: pointer;
+}
+
+.projects-main .projects-box .projects-contents .projects-para{
+    padding: 11px 0;
+    word-spacing: 2px;
+}
+
+.projects-box .projects-contents .projects-text h3{
+    text-transform: capitalize;
+    font-size: 16px;
+    text-align: start;
+}
+
+.projects-box .projects-contents .projects-para p{
+    font-size: 15px;
+}
+
+.active{
+    background: #f66d6d;
+    color: white;
+}
