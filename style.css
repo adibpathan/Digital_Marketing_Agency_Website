@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --------Hero Section------- */
+
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.hero-left{
+    gap: 20px;
+}
+
+.hero-left .hero-win{
+    color: #fe6262;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.hero-left h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.hero-left .hero-para{
+    line-height: 2.2;
+    font-size: 14px;
+}
+
+.hero-left .contact-us{
+    margin-top: 30px;
+}
+
+.hero-left .contact-us button{
+    text-transform: uppercase;
+    background-color: #ff4d4d;
+    border: none;
+    padding: 9px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* =========CONTACT-US========= */
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#contact{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin-bottom: 200px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+    opacity: 1;
+    transform: translate(-50%, -60%);
+    z-index: 1000;
+    background-color: white;
+}
+
+.main-contact{
+    animation: slideInFromBottom 0.5s ease forwards;
+    padding: 20px 20px;
+    line-height: 1.2;
+}
+
+.main-contact form .email{
+    margin-top: 20px;
+}
+
+.main-contact form #email{
+    width: 100%;
+}
+
+.main-contact form input{
+    border: none;
+    border-bottom: 1px solid #000000;
+    background: transparent;
+    padding: 10px 0;
+    outline: none;
+    font-size: 16px;
+    margin: 10px 0px;
+}
+
+.main-contact form .main-input{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.main-contact form .checkbox-container{
+    padding: 20px 0;
+}
+
+.main-contact form .checkbox-container #checkbox{
+    width: 20px;
+    height: 15px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    background-color: red;
+}
+
+.main-contact form .checkbox-container label{
+    font-size: 16px;
+    color: #7a7575;
+}
+
+.main-contact form button{
+    width: 100%;
+    background-color: #f36a6a;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 10px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.error{
+    color: red;
+    font-size: 16px;
+    margin-top: 3px;
+}
+
+.hide{
+    display: none;
+}
+
+/* ========SERVICES SECTION======= */
+
+.services{
+    background-color: #f6f4f4;
+}
+
+.services-container{
+    width: 80%;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.services-container .services-text span{
+    color: #f66d6d;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.services-container .services-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+    width: 90%;
+}
+
+.services-container .services-content .services-title h2{
+    text-transform: uppercase;
+}
+
+.slide-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slide-container .card{
+    width: 250px;
+    position: relative;
+}
+
+.slide-container .card img{
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+}
+
+.services-slider .slide-container .card .slide-content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #f66d6d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+}
+
+.services-slider .slide-container .card .slide-content .slide-title span{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.services-slider .slide-container .card .slide-content .slide-para{
+    text-align: center;
+}
+
+.services-slider .slide-container .card .slide-content .slide-para p{
+    color: #e0dbdb;
+}
+
+.services-slider .slide-container .card .slide-content .read-more-btn button{
+    background: none;
+    padding: 10px 20px;
+    background-color: #fff;
+    text-transform: uppercase;
+    font-size: 13px;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.services-slider .slide-container .card .slide-content .read-more-btn button i{
+    margin-left: 4px;
+}
+
+.services-slider .slide-container .card .slide-content .slide-title, .slide-para, .read-more-btn{
+    padding: 10px 0;
+}
+
+.services-slider .slide-container .card .slide-content:hover{
+    opacity: 1;
+}
