@@ -60,6 +60,13 @@ contactBtn.addEventListener('click', (e)=>{
     }
 })
 
+
+let removeContact = document.getElementById("remove-contact")
+
+removeContact.addEventListener('click', ()=>{
+    contactSection.classList.add('hide')
+})
+
 let projectContents = document.getElementsByClassName('projects-contents');
 let projectImage = document.getElementById('project-image');
 
@@ -69,6 +76,7 @@ function removeActiveClass() {
     project.classList.remove('active');
   });
 }
+
 
 Array.from(projectContents).forEach((project) => {
   project.addEventListener('click', (e) => {
