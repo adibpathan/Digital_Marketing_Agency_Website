@@ -36,10 +36,20 @@
     <section id="contact">
       <div class="main-contact hide">
         <i class="fa-solid fa-xmark" id="remove-contact"></i>
-        <form action="" id="myForm">
+        <form
+          action="https://formspree.io/f/xyzgzqgk"
+          method="POST"
+          id="myForm"
+        >
           <h2>Talk to us</h2>
           <div class="email">
-            <input type="email" placeholder="Work email*" id="email" required />
+            <input
+              type="email"
+              placeholder="Work email*"
+              id="email"
+              name="email"
+              required
+            />
             <div class="error" id="emailError"></div>
           </div>
           <div class="main-input">
@@ -49,6 +59,7 @@
                 placeholder="First name*"
                 required
                 id="first-name"
+                name="first_name"
               />
               <div class="error" id="firstNameError"></div>
             </div>
@@ -58,6 +69,7 @@
                 placeholder="Last name*"
                 required
                 id="last-name"
+                name="last_name"
               />
               <div class="error" id="lastNameError"></div>
             </div>
@@ -69,7 +81,7 @@
               send me communication.</label
             >
           </div>
-          <button type="submit" id="submit">contact us</button>
+          <button type="submit" name="submitBtn" id="submitBtn">contact us</button>
         </form>
       </div>
     </section>
@@ -93,7 +105,7 @@
         </div>
         <div class="services-slider swiper">
           <div class="slide-container swiper-wrapper">
-            <div class="card ">
+            <div class="card">
               <div class="img">
                 <img src="images/img-1.jpg" alt="" />
               </div>
@@ -115,7 +127,7 @@
               </div>
             </div>
 
-            <div class="card ">
+            <div class="card">
               <div class="img">
                 <img src="images/img-1.jpg" alt="" />
               </div>
@@ -137,7 +149,7 @@
               </div>
             </div>
 
-            <div class="card ">
+            <div class="card">
               <div class="img">
                 <img src="images/img-3.jpg" alt="" />
               </div>
@@ -159,7 +171,7 @@
               </div>
             </div>
 
-            <div class="card ">
+            <div class="card">
               <div class="img">
                 <img src="images/img-1.jpg" alt="" />
               </div>
@@ -179,10 +191,9 @@
                   </button>
                 </div>
               </div>
+            </div>
           </div>
-
         </div>
-      </div>
       </div>
     </section>
 
